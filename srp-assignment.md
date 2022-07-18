@@ -35,6 +35,47 @@ class Checker
         }
         return true;
     }
+}
+
+// refactored code
+
+class Checker
+{
+    static bool batteryIsOk(float temperature, float soc, float chargeRate)
+    {
+        return batteryTempStatus(temperature) && batterySocStatus(soc) && chargeRateStatus(chargeRate);
+    }
+
+    private static bool batteryTempStatus(float temperature)
+    {
+        if (temperature < 0 || temperature > 45)
+        {
+            Console.WriteLine("Temperature is out of range!");
+            return false;
+        }
+        return true;
+    }
+
+    private static bool batterySocStatus(float soc)
+    {
+        if (soc < 20 || soc > 80)
+        {
+            Console.WriteLine("State of Charge is out of range!");
+            return false;
+        }
+        return true;
+    }
+    
+    private static bool chargeRateStatus(float chargeRate)
+    {
+        if (chargeRate > 0.8)
+        {
+            Console.WriteLine("Charge Rate is out of range!");
+            return false;
+        }
+        return true;
+    }
+}
 
 ```
 
