@@ -252,4 +252,4 @@ Let us consider an online job site that receives XML data files from different e
 Details from (c) through (i) are all considered being the same for all jobs posted by a given employer. Apply the required pattern to design the process of parsing the input XML file and creating different JOB objects
 
 
-
+**Flyweight pattern**
