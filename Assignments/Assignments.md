@@ -253,3 +253,5 @@ Details from (c) through (i) are all considered being the same for all jobs post
 
 
 **Flyweight pattern**
+
+![Assignment7](https://github.com/shkalaria/philips-july-dp-2022/blob/main/Assignments/Assignment_7.PNG)
